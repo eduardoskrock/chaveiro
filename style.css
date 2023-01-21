@@ -2,14 +2,19 @@
 
 
 :root{
-    --color-principal-orange: #FF9900;
-    --color-background: #252525;
-    --color-text-white: #ffffff;
-    --color-green: #1FCB1B;
-    --color-green-hover: #17a015;
+    --C6CACA: #f5f5f5;
+    --D2D6D6: #ffffff;
+    --878A8A: #878A8A;
+    --3b3b3b: #3b3b3b;
+    --464646: #464646;
+    --1FCB1B: #1FCB1B;
+    --17a015: #17a015;
+    --FF9900: #FF9900;
 }
+
+
 body{
-    background: var(--color-background);
+    background: var(--464646);
     padding: 2rem;
     margin: 0 auto;
 
@@ -18,16 +23,16 @@ body{
 
 .title {
     font-family: 'Poppins';
-    color: var(--color-text-white);
+    color: var(--C6CACA);
 }
 
 .text{
     font-family: 'Inter';
-    color: var(--color-text-white);
+    color: var(--D2D6D6);
 }
 
 .accent-color{
-    color: var(--color-principal-orange);
+    color: var(--FF9900);
 } 
 
 
@@ -35,16 +40,17 @@ body{
 /*início cabeçalho*/
 
 .main-menu{
-    margin-left: -40px; /*arrumar depois*/
     width: 100%;
     height: 100px;
-    background-color: var(--color-background);
+    background-color: var(--3b3b3b);
     border-bottom: 1px solid #101726;
     display: flex;
     justify-content: center;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 10;
+    border: none;
 }
 .container-header{
     padding: 2rem;
@@ -57,6 +63,11 @@ body{
 
 .main-menu .container-header #logo{
     cursor: pointer;
+    padding: 0 0 0 32px;
+}
+
+.main-menu .container-header #logo-mobile{
+    display: none;
 }
 
 .main-menu .container-header #logo #logo-mobile{
@@ -67,7 +78,7 @@ body{
 .main-menu nav .menu{
     display: flex;
     gap: 2rem;
-    color: var(--color-text-white);
+    color: var(--D2D6D6);
     list-style: none;
     align-items: center;
 }
@@ -80,18 +91,18 @@ body{
 
 .main-menu nav .menu li a{
     text-decoration: none;
-    color: var(--color-text-white);
+    color: var(--D2D6D6);
 }
 
 .main-menu nav .menu li a:hover{
-    color: var(--color-principal-orange)
+    color: var(--FF9900);
 }
 
 .btn-link{
     text-decoration: none;
 }
 .btn-cta{
-    background: var(--color-green);
+    background: var(--1FCB1B);
     width: 280px;
     height: 55px;
     text-shadow: 1px 1px rgb(124, 124, 124);
@@ -102,15 +113,22 @@ body{
     font-family: 'Poppins';
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--color-text-white);
+    color: var(--D2D6D6);
 }
 
 .btn-cta:hover{
-    background: var(--color-green-hover);
+    background: var(--17a015);
+    transition: .3s;
 }
 
 .button-menu-mobile{
     display: none;
+}
+
+.btn-cta.btn-cta-hero.btn-cta-right{
+    width: 200px;
+    background: transparent;
+    border: 2px solid var(--17a015);
 }
 
 .hamburguer{
@@ -154,8 +172,10 @@ body{
 #section1{
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 800px;
+    filter: drop-shadow(-176px 328px 104px rgba(99, 99, 99, 0.01)) drop-shadow(-113px 210px 95px rgba(0, 0, 0, 0.04)) drop-shadow(-64px 118px 80px rgba(0, 0, 0, 0.15)) drop-shadow(-28px 52px 60px rgba(214, 214, 214, 0.26)) drop-shadow(-7px 13px 33px rgba(192, 192, 192, 0.192)) drop-shadow(0px 0px 0px rgba(126, 126, 126, 0.3));
 }
+
 
 .hero{
     width: 90vw;
@@ -170,7 +190,7 @@ body{
 }
 
 .title-hero{
-    line-height: 3.5em;
+    line-height: 4rem;
 }
 
 .title-hero-title{
@@ -190,6 +210,7 @@ body{
     width: 400px;
     display: flex;
     gap: 1rem;
+    padding: 20px 0 0 0;
 }
 
 .btn-cta-hero{
@@ -206,6 +227,168 @@ body{
     color: var(--color-principal-orange)
 }
 
+.card-hero{
+    padding: 3rem 0 0 0 ;
+    display: flex;
+    width: 100%;
+    height: 180px;
+    gap: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: .5rem;
+    line-height: 1.4rem;
+    border: 2px solid #FF9900;
+    box-shadow: 5px 4px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.title-card-hero{
+    font-family: 'Poppins';
+    color: #3b3b3b;
+}
+.description-card-hero{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333333;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.card:hover{
+    background: #FF9900;
+    transition: .3s;
+}
+
+/*inicio section2*/
+
+#section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 950px;
+}
+
+.container-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-section2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-section2 .title-cards{
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+
+.wrapper-card-section2{
+    width: 800px;
+    display: flex;
+    height: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: #505050;
+    border-radius: 20px;
+    border: 2px solid #474747;
+    box-shadow: 6px 3px 8px 1px #353535;
+}
+
+.card-section2{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 230px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.number-card{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--D2D6D6);
+}
+
+
+.line{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 5px;
+    height: 60px;
+    background: #FF9900;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.text-card{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title-card{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--D2D6D6);
+    line-height: 1.5rem;
+}
+
+.description-card{
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #a3a3a3;
+    font-size: 1.4rem;
+}
+
+.btn-cta-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 70px;
+    background-color: #1FCB1B;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 600;
+}
+
+.btn-cta-section2:hover{
+    background: #17a015;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -219,7 +402,6 @@ body{
 
     body{
         padding: 0;
-        overflow-x: hidden;
     }
 /*menu - menu hamburguer*/
 
@@ -229,14 +411,14 @@ body{
         margin: 0;
     }
 
-    #logo-desktop{
+    .main-menu .container-header #logo{
         display: none;
     }
 
-    #logo-mobile{
+    .main-menu .container-header #logo-mobile{
         display: block;
-        z-index: 999;
     }
+
     .hamburguer{
         display: block;
         z-index: 999;
@@ -269,6 +451,8 @@ body{
     /*final do header*/
 
     .hero{
+        width: 100%;
+        max-width: 500px;
         flex-direction: column;
         padding: 30px 0 0 30px;
      }
@@ -277,14 +461,14 @@ body{
         margin-top: 60px;
         width: 100%;
         max-width: 500px;
-        height: 800px;
+        height: 1350px;
     }
 
     .wrapper-text-hero{
         width: 100%;
         max-width: 400px;
-        height: 800px;
-
+        height: 500px;
+        text-align: center;
     }
 
     .wrapper-btn-cta-hero{
@@ -316,8 +500,71 @@ body{
 
 
     .text.description-contact{
-        font-size: .8rem;
-        font-weight: 500;        
+        font-size: 1rem;
+        font-weight: 500;   
+        line-height: 1.4rem;     
+    }
+
+    .box2 .wrapper-img-hero{
+        display: none;
+    }
+
+    .card-hero{
+        display: flex;        
+        flex-direction: column;
+        height: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    /*section2*/
+
+    
+    .title-section2{
+      text-align: center;
+    }
+    .title-section2 .title-cards{
+        font-size: 1.5rem;
+    }
+
+
+    .wrapper-card-section2{
+        padding: 10px 0 0 10px;
+        width: 350px;
+        height: 1100px;
+    }
+
+    .line{
+        height: 100px;
+    }
+
+    .card-4{
+        height: 100px;
+    }
+
+    .number-card-section2{
+        font-size: 4rem;
+    }
+
+    .number-card{
+        height: 200px;
+    }
+
+    .number-card.number-card-4{
+        height: 70px;
+    }
+
+    .title-card{
+        font-size: 1.4rem;
+    }
+
+    .btn-cta-section2{
+        width: 320px;
+        font-size: 1.2rem;
     }
 
 
