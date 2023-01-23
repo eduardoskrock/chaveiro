@@ -6,7 +6,7 @@
     --D2D6D6: #ffffff;
     --878A8A: #878A8A;
     --3b3b3b: #3b3b3b;
-    --464646: #464646;
+    --464646: #5e5e5e;
     --1FCB1B: #1FCB1B;
     --17a015: #17a015;
     --FF9900: #FF9900;
@@ -14,9 +14,10 @@
 
 
 body{
-    background: var(--464646);
+    background: rgb(54, 54, 54);
     padding: 2rem;
     margin: 0 auto;
+    filter: drop-shadow(-29px 16px 69px #878A8A);
 
 }
 
@@ -102,7 +103,7 @@ body{
     text-decoration: none;
 }
 .btn-cta{
-    background: var(--1FCB1B);
+    background:  var(--1FCB1B);
     width: 280px;
     height: 55px;
     text-shadow: 1px 1px rgb(124, 124, 124);
@@ -118,7 +119,7 @@ body{
 
 .btn-cta:hover{
     background: var(--17a015);
-    transition: .3s;
+    transition: .1s;
 }
 
 .button-menu-mobile{
@@ -128,7 +129,7 @@ body{
 .btn-cta.btn-cta-hero.btn-cta-right{
     width: 200px;
     background: transparent;
-    border: 2px solid var(--17a015);
+    border: 2px solid #1FCB1B;
 }
 
 .hamburguer{
@@ -173,7 +174,6 @@ body{
     display: flex;
     justify-content: center;
     height: 800px;
-    filter: drop-shadow(-176px 328px 104px rgba(99, 99, 99, 0.01)) drop-shadow(-113px 210px 95px rgba(0, 0, 0, 0.04)) drop-shadow(-64px 118px 80px rgba(0, 0, 0, 0.15)) drop-shadow(-28px 52px 60px rgba(214, 214, 214, 0.26)) drop-shadow(-7px 13px 33px rgba(192, 192, 192, 0.192)) drop-shadow(0px 0px 0px rgba(126, 126, 126, 0.3));
 }
 
 
@@ -240,30 +240,29 @@ body{
     flex-direction: column;
     align-items: center;
     width: 28%;
-    background-color: #cfcfcf;
+    background: transparent;
     border-radius: 10px;
     box-sizing: border-box;
     padding: .5rem;
     line-height: 1.4rem;
-    border: 2px solid #FF9900;
     box-shadow: 5px 4px 10px 2px rgba(0, 0, 0, 0.15);
 }
 
 .title-card-hero{
     font-family: 'Poppins';
-    color: #3b3b3b;
+    color: #f0b000;
 }
 .description-card-hero{
     text-align: center;
     font-size: 1.1rem;
-    color: #333333;
+    color: #b1b1b1;
     font-family: 'Inter';
     font-weight: 500;
 }
 
 .card:hover{
     background: #FF9900;
-    transition: .3s;
+
 }
 
 /*inicio section2*/
@@ -272,13 +271,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 950px;
+    height: 1300px;
 }
 
 .container-section2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
 }
 
 .title-section2{
@@ -379,10 +379,146 @@ body{
     background: #17a015;
 }
 
+.title-end-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 200px;
+    border-width: 3px 0px;
+    border-style: solid;
+    border-color: #FF9900;
+    margin-top: 24px;
+}
+
+.title-end{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+/*section3*/
+
+.container-section3{
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-container3{
+    width: 800px;
+    height: 2000px;
+    background: #505050;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+
+.title3{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #d3d3d3;
+}
+
+.subtitle-section3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.description-subtitle3{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #e4e4e4;
+}
+
+.card-box{
+    width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cards-section3{
+    display: flex;
+    gap: 2rem;
+    padding: 10px 0 0 0;
+}
+
+.box-section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background: #2A2A2A;
+    border-radius: 10px;
+}
+
+.text-boxsection{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-rating{
+    width: 80%;
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0 0 0;
+}
+
+.title-rating{
+    height: 100px;
+    padding: 30px 0 0 0;
+}
+
+.boxcard-rating{
+    background: #2A2A2A;
+    width: 90%;
+    height: 230px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
 
 
 
+.boxcard-rating .name-author{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FF4D00;
+    text-align: center;
+}
 
+.boxcard-rating .comment-author{
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    color: #F0F0F0;
+    font-style: italic;
+    margin-left: 24px;
+    text-align: center;
+}
 
 
 
@@ -451,21 +587,20 @@ body{
     /*final do header*/
 
     .hero{
-        width: 100%;
-        max-width: 500px;
+        margin-top: 20px;
+        width: 400px;
         flex-direction: column;
-        padding: 30px 0 0 30px;
      }
 
     #section1{
         margin-top: 60px;
         width: 100%;
         max-width: 500px;
-        height: 1350px;
+        height: 1400px;
     }
 
     .wrapper-text-hero{
-        width: 100%;
+        width: 400px;
         max-width: 400px;
         height: 500px;
         text-align: center;
@@ -479,6 +614,10 @@ body{
     }
 
     .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
         font-size: 2.3rem;
     }
     .btn-cta-hero{
@@ -494,13 +633,13 @@ body{
     .description-btn-contact{
         padding: 5px;
         margin-top: 32px;
-        width: 100%;
-        max-width: 500px;
+        width: 400px;
+        text-align: center;
     }
 
-
     .text.description-contact{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        color: #a3a3a3;
         font-weight: 500;   
         line-height: 1.4rem;     
     }
@@ -567,6 +706,31 @@ body{
         font-size: 1.2rem;
     }
 
+    .title-end-section2{
+        width: 350px;
+        height: 200px;
+        border: 4px 0 solid orange;
+    }
+
+    .title-end-section2 .title-end{
+        font-size: 1.5rem;
+    }
 
 
+
+}
+
+@media screen and (max-width: 380px){
+    .hero{
+        width: 380px;
+        background: blue;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+        font-size: 1.6rem;
+    }
 }
