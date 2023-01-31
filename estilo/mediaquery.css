@@ -1,0 +1,259 @@
+@media screen and (max-width: 900px) {
+
+    body{
+        padding: 0;
+    }
+/*menu - menu hamburguer*/
+
+    .main-menu{
+        width: 100%;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .main-menu .container-header #logo{
+        display: none;
+    }
+
+    .main-menu .container-header #logo-mobile{
+        display: block;
+    }
+
+    .hamburguer{
+        display: block;
+        z-index: 999;
+        transition: .5s ease;
+    }
+    .menu{
+        position: fixed; 
+        top: 0;
+        right: 0;
+        height: 100vh;
+        margin: 0;
+        background-color: #222;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        padding: 100px 20px;
+        transition: .5s ease;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+
+    .btn-cta{
+        width: 220px;
+        font-size: 1rem;
+    }
+
+    /*final do header*/
+
+    .hero{
+        margin-top: 20px;
+        max-width: 400px;
+        flex-direction: column;
+     }
+
+    #section1{
+        max-width: 400px;
+        height: 1300px;
+    }
+
+    .wrapper-text-hero{
+        width: 400px;
+        max-width: 400px;
+        height: 500px;
+        text-align: center;
+    }
+
+    .wrapper-btn-cta-hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: .5rem;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        font-size: 2.3rem;
+    }
+    .btn-cta-hero{
+        margin-top: 20px;
+        width: 320px;   
+        height: 60px;
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .description-btn-contact{
+        padding: 5px;
+        margin-top: 32px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .text.description-contact{
+        font-size: 1.1rem;
+        color: #a3a3a3;
+        font-weight: 500;   
+        line-height: 1.4rem;     
+    }
+
+    .box2 .wrapper-img-hero{
+        display: none;
+    }
+
+    .card-hero{
+        display: flex;        
+        flex-direction: column;
+        height: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    /*section2*/
+
+    
+    .title-section2{
+      text-align: center;
+    }
+    .title-section2 .title-cards{
+        font-size: 1.5rem;
+    }
+    .container-section2{
+        height: 1600px;
+    }
+
+    .wrapper-card-section2{
+        padding: 10px 0 0 10px;
+        width: 350px;
+        height: 1100px;
+    }
+
+    .line{
+        height: 100px;
+    }
+
+    .card-4{
+        height: 100px;
+    }
+
+    .number-card-section2{
+        font-size: 4rem;
+    }
+
+    .number-card{
+        height: 200px;
+    }
+
+    .number-card.number-card-4{
+        height: 70px;
+    }
+
+    .title-card{
+        font-size: 1.4rem;
+    }
+
+    .btn-cta-section2{
+        width: 320px;
+        font-size: 1.2rem;
+    }
+
+    .title-end-section2{
+        width: 350px;
+        height: 200px;
+        border: 4px 0 solid orange;
+    }
+
+    .title-end-section2 .title-end{
+        font-size: 1.5rem;
+    }
+
+
+    #section3{
+        height: 2600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper-container3{
+        max-width: 400px;
+        height: 2450px;
+        padding: 0;
+    }
+
+    .title-section3{
+        margin-top: 24px;
+    }
+
+    .cards-section3{
+        max-width: 400px;
+    }
+    .text-boxsection{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    .title-rating{
+        padding: 1rem;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        background: rgb(38,38,38);
+        background: linear-gradient(180deg, rgba(38,38,38,1) 9%, rgba(70,70,70,1) 50%, rgba(80,80,80,1) 64%);
+        border-radius: 30px;
+    }
+    .title-rating .title3{
+        text-align: center;
+        font-size: 1.5rem;
+
+    }
+
+    .boxcard-rating{
+        height: 320px;
+    }
+
+    .name-author{
+        font-size: 1rem;
+    }
+
+    .comment-author{
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 380px){
+
+    .hero{
+        width: 380px;
+        background: blue;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+        font-size: 1.6rem;
+    }
+
+    .wrapper-container3{
+        max-width: 380px;
+    }
+}
