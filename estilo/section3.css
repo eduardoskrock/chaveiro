@@ -1,0 +1,165 @@
+.container-section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    padding: 5rem 0 5rem 0;
+}
+
+.wrapper-container3{
+    width: 800px;
+    background: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+
+.title3{
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #d3d3d3;
+}
+
+.subtitle-section3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.description-subtitle3{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #e4e4e4;
+}
+
+.card-box{
+    width: 300px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cards-section3{
+    display: flex;
+    gap: 2rem;
+    padding: 10px 0 0 0;
+}
+
+.box-section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background: rgb(97, 97, 97);
+    border-radius: 10px;
+}
+
+.text-boxsection{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-rating{
+    max-width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 4rem 0 0 0;
+    border-radius: 20px;
+}
+
+.title-rating{
+    height: 100px;
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.boxcard-rating{
+    box-shadow: 10px 4px 4px rgba(64, 64, 64, 0.2);
+    background-image: radial-gradient(circle at 50% -20.71%, #5e7c8d 0, #5b7784 8.33%, #5a727a 16.67%, #596b70 25%, #586466 33.33%, #575c5c 41.67%, #555353 50%, #534a4b 58.33%, #504245 66.67%, #4e3b40 75%, #4a343d 83.33%, #462f3c 91.67%, #422a3b 100%);    height: 290px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 40%;
+    height: 400px;
+}
+
+.aspas-card-1{
+    height: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.aspas-card-2{
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.aspas{
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.boxcard-rating .name-author{
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FF9900;
+    text-align: center;
+}
+
+.boxcard-rating .comment-author{
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: #cacaca;
+    font-style: italic;
+    margin-left: 24px;
+    text-align: center;
+}
+
+.boxcard-rating .accent-text-boxcard{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.boxcard-rating .star-comment{
+    display: flex;
+    justify-content: center;
+}
+
+
+.link-google-comment{
+    color: rgb(196, 196, 196);
+    font-size: .7rem;
+    font-family: 'Inter';
+    
+}
+
+.btn-cta-3{
+    width: 450px;
+}

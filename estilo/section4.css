@@ -1,0 +1,15 @@
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    }
+    
+.wrapper4{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    gap: 4rem;
+}
