@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Chaveiro Ney | Plantão 24h</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/header.css">
     <link rel="stylesheet" href="estilo/section1.css">
@@ -12,10 +13,31 @@
     <link rel="stylesheet" href="estilo/section5.css">
     <link rel="stylesheet" href="estilo/mediaquery.css">
     <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/scrollReveal.css">
 
+    <title>Chaveiro Ney | Plantão 24h</title>
+  
 </head>
 <body>
-        <header class="main-menu">
+
+        <div class="sub-header">
+            <div class="container-sub-header">
+                <div class="adress-store">
+                    <span class="text-sub-header">R. Saldanha Marinho, 693 - loja 03, Centro, Curitiba! <span class="link-maps"> <a href="https://www.google.com/maps/dir//chaveiro+ney/@-25.4131946,-49.2805619,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94dce40c84338dc1:0xcc1a2ea1acf5ebee!2m2!1d-49.278343!2d-25.4310896"  id="link-subheader">Ver rota ></a></span> </span>
+                </div>
+
+
+                <div class="contact-store">
+                    <span class="text-sub-header cellphone">(41) 3014-4744</span> 
+                    <span id="line-subheader"></span>
+                    <span class="text-sub-header cellphone">(41) 99195-4744</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <header class="main-menu area">
 
             <div class="container-header">
                 <div id="logo">
@@ -28,7 +50,7 @@
         
     
                 <nav>
-                    <ul class="menu active">
+                    <ul class="menu ">
     
                         <li><a href="">Home</a></li>
                         <li><a href="">Serviços</a></li>
@@ -49,7 +71,7 @@
            
         </header>
 
-        <section id="section1">
+        <section id="section1" class="area1">
 
         <div class="hero">
 
@@ -90,7 +112,7 @@
                 <div class="card-hero">
                     <div class="card">
                         <h3 class="title-card-hero">Experiência</h3>
-                        <span class="description-card-hero">Atuamos há mais de duas décadas em Curitiba e região metropolitana</span>
+                        <span class="description-card-hero">Atuamos há mais de 30 anos em Curitiba e região metropolitana</span>
                     </div>
 
                     <div class="card">
@@ -111,11 +133,23 @@
                     <img src="imagens/img-hero.png" alt="" id="img-hero">
                 </div>
             </div>
+            <div id="links-fixos" class="hidden-md-down">
+                <a href="link-para-pagina">
+              
+              <!-- coloque o conteúdo aqui 
+                   imagem ou texto
+              -->
+            
+            </a>
+              
+            </div>
         </div>
     
         </section>
 
-        <section id="section2">
+        
+        <section id="section2" class="area2">
+            
             <div class="container-section2">
                 <div class="title-section2">
                     <h2 class="title-cards">Confira como funciona nosso <span class="accent-color">plantão 24h</span></h2>
@@ -173,13 +207,13 @@
                 </div>
 
                 <aside class="title-end-section2">
-                    <h2 class="title-end">Conte com a <span class="accent-color">experiência </span>de quem está há <span span class="accent-color">mais de 20 anos</span> no mercado. 
+                    <h2 class="title-end">Conte com a <span class="accent-color">experiência </span>de quem está há <span span class="accent-color">mais de 30 anos</span> no mercado. 
                     </h2>
                 </aside>
             </div>
         </section>
 
-        <section id="section3">
+        <section id="section3" class="area3">
             <div class="container-section3">
                 <div class="wrapper-container3">
                    <div class="title-section3">
@@ -220,7 +254,7 @@
 
                    <div class="card-rating">
 
-                        <div class="boxcard-rating">
+                        <div class="boxcard-rating boxcard-1">
                            <div class="aspas-card-1">
                             <img src="imagens/aspas.png" class="aspas" alt="">
                            </div>
@@ -236,7 +270,7 @@
                             </div>
                         </div>
 
-                        <div class="boxcard-rating">
+                        <div class="boxcard-rating boxcard-2">
                             <div class="aspas-card-2">
                                 <img src="imagens/aspas-invertida.png" class="aspas" alt="">
                                </div>
@@ -252,7 +286,7 @@
                             </div>
                         </div>
 
-                        <div class="boxcard-rating">
+                        <div class="boxcard-rating boxcard-3">
                             <div class="aspas-card-1">
                                 <img src="imagens/aspas.png" class="aspas" alt="">
                                </div>
@@ -270,7 +304,7 @@
                             </div>
                         </div>
 
-                        <div class="boxcard-rating">
+                        <div class="boxcard-rating boxcard-4">
 
                             <div class="aspas-card-2">
                                 <img src="imagens/aspas-invertida.png" class="aspas" alt="">
@@ -304,7 +338,7 @@
             </div>
         </section>
 
-        <section id="section4">
+        <section id="section4" class="area4">
             <div class="container4">
                 <div class="wrapper4">
                     <div class="box2">
@@ -344,7 +378,7 @@
             </div>
         </section>
 
-        <section id="section5">
+        <section id="section5" class="area5">
             <div class="container-section5">
                 <div class="title-section2">
                     <h2 class="title-cards">Confira todos os <span class="accent-color">serviços que poderão te ajudar</span></h2>
@@ -420,7 +454,7 @@
                 <div class="wrapper-card-section5">
                     <div class="title-card-services-wrapper">
                         <div class="img-section">
-                            <img src="imagens/key-cards-services.png" alt="">
+                            <img src="imagens/key-home-cards-services.png" alt="">
                         </div>
                         <div class="title-card-services">
                             <span>Condominial</span>
@@ -450,7 +484,7 @@
             </div>
         </section>
 
-        
+    <script src="scrollReveal.js"></script>    
     <script src="script.js"></script>
 </body>
 </html>
